@@ -1,1 +1,94 @@
-*{margin:0;padding:0}.main{background-color:#badc58;height:100vh;position:relative}.main__field{background-color:#FFF;width:300px;position:absolute;display:flex}.main__one,.main__two,.main__three{width:100px;height:100px;background-color:brown}.main__two{margin:0 2px}.main__chest{height:100%;width:300px;background-color:#30336b;position:absolute;right:0;display:flex;flex-direction:column;text-align:center}.main__bag{width:100%;flex:1}.main__store{width:100%;flex:1}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+.main {
+  background-color: #badc58;
+  height: 100vh;
+  position: relative; }
+  .main__field {
+    background-color: #FFF;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap; }
+  .main__one, .main__two, .main__three {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    .main__one progress, .main__two progress, .main__three progress {
+      width: 100px;
+      display: none; }
+  .main__field-collect {
+    display: none; }
+  .main__two {
+    margin: 0 2px; }
+
+.chest {
+  height: 100%;
+  width: 300px;
+  background-color: #30336b;
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  .chest__bag {
+    width: 100%;
+    flex: 1; }
+  .chest__grain {
+    width: 40px;
+    height: 40px; }
+  .chest__store {
+    width: 100%;
+    flex: 1; }
+  .chest__bag-container {
+    margin: 20px 0 0 20px;
+    display: flex; }
+  .chest__store-container {
+    margin: 20px 0 0 20px;
+    display: flex; }
+  .chest__vegetables img {
+    width: 40px;
+    height: 40px;
+    filter: grayscale(1); }
+
+.status {
+  display: flex;
+  position: absolute;
+  width: 100%; }
+  .status__pocket {
+    width: 200px;
+    background-color: rgba(241, 196, 15, 0.6);
+    font-size: 20px; }
+    .status__pocket img {
+      width: 30px;
+      height: 30px;
+      padding-right: 10px; }
+  .status__addField {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 40px;
+    bottom: 40px; }
+  .status__level {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #FFF;
+    line-height: 30px;
+    text-align: center; }
+  .status__level-box {
+    position: absolute;
+    left: 35%;
+    display: flex;
+    align-items: center; }

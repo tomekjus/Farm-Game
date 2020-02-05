@@ -9,17 +9,36 @@
 </head>
 <body>
     <main class="main">
-        <div class="main__field">
-            <div id="one" class="main__one"><progress value="0" max="10" id="progressBar"></progress></div>
-            <div class="main__two"></div>
-            <div class="main__three"></div>
-        </div>
-        <div class="main__chest">
-            <div class="main__bag">
-                <h2>Bag</h2>
+        <div class="status">
+            <div id="pocket" class="status__pocket"><img id="goldImg" src="img/gold.svg" alt="">0g</div>
+            <div class="status__level-box">
+                <div id="lvlStatus" class="status__level">1</div>
+                <progress value="0" max="10" class="status__level-bar" id="level"></progress>
             </div>
-            <div class="main__store">
+        </div>
+        <div id="mainField" class="main__field">
+            <button id="fieldBtn" class="status__addField">+</button>
+        </div>
+        <div class="chest">
+            <div class="chest__bag">
+                <h2>Bag</h2>
+                <div class="chest__bag-container">
+                    <img class="chest__grain" src="img/rice.svg" alt="">
+                </div>
+            </div>
+            <div class="chest__store">
                 <h2>Store</h2>
+                <div class="chest__store-container">
+                    <div class="chest__vegetables">
+                        <img src="img/potato.svg" alt="">
+                    </div>
+                    <div class="chest__vegetables">
+                        <img src="img/carrot.svg" alt="">
+                    </div>
+                    <div class="chest__vegetables">
+                        <img src="img/tomato.svg" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -28,3 +47,23 @@
     </script>
 </body>
 </html>
+
+
+
+<!-- <div id="one" class="main__one">
+    <progress value="0" max="10" id="progressBar"></progress>
+    <button onclick="collect(0)" class="main__field-collect">Collect</button>
+    <div class="main__field-chest">
+        <button onclick="addSeed(0)" class="main__field-seed">
+            <img class="chest__grain" src="img/rice.svg" alt="">
+        </button>
+    </div>
+</div>
+<div class="main__two">
+    <progress value="0" max="10" id="progressBar"></progress>
+    <button onclick="collect(1)" class="main__field-collect">Collect</button>
+</div>
+<div class="main__three">
+    <progress value="0" max="10" id="progressBar"></progress>
+    <button onclick="collect(2)" class="main__field-collect">Collect</button>
+</div> -->

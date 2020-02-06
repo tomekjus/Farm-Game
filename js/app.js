@@ -5,6 +5,8 @@ const level = document.getElementById('level');
 const lvlStatus = document.getElementById('lvlStatus');
 const fieldBtn = document.getElementById('fieldBtn');
 const mainField = document.getElementById('mainField');
+const bag = document.getElementById('bag');
+const btnClose = document.getElementById('close');
 const allFields = [];
 
 
@@ -57,6 +59,8 @@ function addField() {
 
 function addSeed(e) {
     let id = e.target.dataset.number;
+    bag.style.display = 'block';
+
 
     // let timeleft = 1;
     // progress.style.display = 'block';
@@ -69,6 +73,14 @@ function addSeed(e) {
     //         collect.style.display = 'block';
     //     }
     // }, 1000);
+    
 }
 
+function closeBag() {
+    bag.style.display = 'none';
+}
+
+
+
 fieldBtn.addEventListener('click', addField);
+btnClose.addEventListener('click', closeBag);

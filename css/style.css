@@ -92,3 +92,19 @@
     left: 35%;
     display: flex;
     align-items: center; }
+
+.bag {
+  height: 400px;
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  display: none; }
+  .bag__close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0; }
